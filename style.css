@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Playfair:ital,opsz,wght@0,5..1200,300;1,5..1200,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Playfair', serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.quote-box
+{
+    background: #fff;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+    border-radius: 15px;
+}
+
+.quote-box h2{
+    font-size: 40px;
+    margin-bottom:1.2em;
+    position: relative;
+}
+
+.quote-box h2::after{
+    content: '';
+    width: 4.5em;
+    height: .041em;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    width: 4.2em;
+    bottom: .09em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-box blockquote{
+    font-size: 35px;
+    min-height: 2.0em;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+}
+
+.quote-box span{
+    display: block;
+    font-size: 20px;
+    margin-top: 0.625em;
+    float:right;
+    position: relative;
+}
+
+.quote-box span::before{
+    content: '';
+    width: 1.1em;
+    height: 2px;
+    background: blue;
+    position: absolute;
+    left: -1.8em;
+    top: 50%;
+}
+
+.quote-box .button{
+    /* padding: 10px; */
+    width: 100%;
+    display: flex;
+    margin-top: 4.1em;
+    justify-content: center;
+}
+
+.quote-box button{
+    background: rgb(45, 135, 232);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(23, 124, 229);
+    width: 9.5em;
+    height: 3.5em;
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.quote-box button img{
+    width: 20px;
+    margin: 10px;
+}
+
+.quote-box button:nth-child(2)
+{
+    background: transparent;
+    color: #333;
+}
